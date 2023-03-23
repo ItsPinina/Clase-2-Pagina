@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Esto aparece arribita</title>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">INDEX</a>
+            <a href="page-1.html">SKETCH-1</a>
+            <a href="page-2.html">SKETCH-2</a>
+            <a href="page-3.html">SKETCH-3</a>
+            <a href="page-4.html">SKETCH-EXTRA</a>
+        </nav>
+        <main></main>
+        <aside>
+            <p>
+                Hola!, mi nombre es Adrián Vásquez y mi apodo es Pinina estoy tomando este curso para poder desarrollar mis habilidades en programacion Front End y con ellas lograr la creación de un emprendimiento propio para ideas que
+                vienen proximas en el futuro
+            </p>
+        </aside>
+        <script>
+            function setup() {
+                createCanvas(windowWidth, windowHeight);
+                selectAll("a")[0].addClass("aqui");
+            }
+
+            function draw() {
+                background(255, 255, 255);
+                textAlign(CENTER, CENTER);
+                textSize(100);
+                text("😳", mouseX, mouseY);
+            }
+
+            function windowResized() {
+                resizeCanvas(windowWidth, windowHeight);
+            }
+        </script>
+    </body>
+</html>
